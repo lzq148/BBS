@@ -1,5 +1,5 @@
 <?php
-$conn =new mysqli('localhost', 'root', 'lzqwmx111',"mybbs");
+$conn =new mysqli('localhost', 'root', 'root',"mybbs");
 if ($conn->connect_error){
     die("数据库连接失败！");
 }
