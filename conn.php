@@ -1,7 +1,7 @@
 <?php
 $conn =new mysqli('localhost', 'root', 'root',"mybbs");
 if ($conn->connect_error){
-    die("数据库连接失败！");
+    die("连接失败");
 }
 
 //新改进的
