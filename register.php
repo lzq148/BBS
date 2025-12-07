@@ -101,7 +101,7 @@ function validateForm(){
 </html>
 <?php
 if (!empty($_POST["username"])and!empty($_POST["password"])) {
-    $conn = new mysqli('localhost', 'root', '123456', "mybbs", 3306);
+    $conn = new mysqli('localhost', 'root', 'root', "mybbs", 3306);
     if ($conn->connect_error) {
         die("数据库连接失败！");
     }
@@ -122,6 +122,7 @@ if (!empty($_POST["username"])and!empty($_POST["password"])) {
     }
     $conn->close();
 }
+
 
 
 
