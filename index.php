@@ -6,7 +6,7 @@ include("conn.php");
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>林间小屋</title>
+    <title>111</title>
     <style>
         .header a {
             color: white !important;
@@ -146,7 +146,7 @@ include("conn.php");
             WHERE a.level = 1  -- 只显示公开文章
             ORDER BY a.time DESC";
 
-    $conn = new mysqli('localhost', 'root', 'lzqwmx111', "mybbs");
+    $conn = new mysqli('localhost', 'root', 'root', "mybbs");
     if ($conn->connect_error) {
         die("数据库连接失败！");
     }
