@@ -16,7 +16,7 @@ if(!isset($_GET['id']) || empty($_GET['id'])) {
 
 $article_id = (int)$_GET['id'];
 
-$conn = new mysqli('localhost', 'root', 'lzqwmx111', "mybbs");
+$conn = new mysqli('localhost', 'root', 'root', "mybbs");
 if ($conn->connect_error) {
     die("数据库连接失败！");
 }
@@ -50,4 +50,5 @@ if ($conn->query($delete_sql) === TRUE) {
 }
 
 $conn->close();
+
 ?>
