@@ -12,7 +12,7 @@ if(!isset($_SESSION['user']) || empty($_SESSION['user']['username'])) {
 // 处理表单提交
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_POST['title']) && !empty($_POST['body']) && isset($_POST['level']) && $_POST['level'] !== '') {
-        $conn = new mysqli('localhost', 'root', 'lzqwmx111', "mybbs");
+        $conn = new mysqli('localhost', 'root', 'root', "mybbs");
         if ($conn->connect_error) {
             die("数据库连接失败！");
         }
