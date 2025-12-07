@@ -12,7 +12,7 @@ $article_id = (int)$_GET['id'];
 
 $conn = new mysqli('localhost', 'root', 'root', "mybbs");
 if ($conn->connect_error) {
-    die("数据库连接失败！");
+    die("连接失败");
 }
 
 // 查询文章详情
